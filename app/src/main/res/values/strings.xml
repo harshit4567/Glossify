@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Glossify</string>
+    <string-array name="sections"></string-array>
+    <string name="title_activity_listview1">Listview1</string>
+
+</resources>
+

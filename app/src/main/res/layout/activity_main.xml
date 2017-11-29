@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harshit.glossify.MainActivity">
+
+    <Button
+        android:id="@+id/mybutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/sample"
+        android:onClick="takePic"
+        android:text="Take\nPhoto"
+        android:foreground="@drawable/ripple"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/process"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/process" />
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="256dp"
+        android:layout_height="279dp"
+        android:layout_marginTop="20dp"
+        android:minHeight="198dp"
+        android:minWidth="198dp"
+        android:background="@drawable/imageview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.49" />
+
+    <Button
+        android:id="@+id/process"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/sample"
+        android:foreground="@drawable/ripple"
+        android:enabled="false"
+        android:onClick="api_call"
+        android:text="Process"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/mybutton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myImageView"
+        app:layout_constraintVertical_bias="0.53" />
+
+</android.support.constraint.ConstraintLayout>
